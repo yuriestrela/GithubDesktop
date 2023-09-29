@@ -1,8 +1,7 @@
-n1 = int(input('Digite um número inteiro para descobrir quantos digitos ele possui: '))
+n1 = int(input('Digite a primeira nota: '))
+n2 = int(input('Digite a segunda nota: '))
+n3 = int(input('Digite a terceira nota: '))
+media = ((n1*1) + (n2*1) + (n3*2)) / (1+1+2)
 
-cont = 0
-for i in str(n1):
-    if i in "0123456789":
-        cont += 1
-
-print(cont)
+resultado = lambda x : f'Aluno aprovado, média: {media:.0f}' if (x >=60) else f'Aluno reprovado, média: {media:.0f}'
+print(resultado(media))
